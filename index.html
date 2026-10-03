@@ -1,217 +1,157 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Job Application | Professional Form</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <main class="page">
+      <!-- LEFT SIDE -->
 
-        <!-- LEFT SIDE -->
+      <section class="intro-section">
+        <div class="intro-content">
+          <div class="brand">Career<span>Connect</span></div>
 
-        <section class="intro-section">
+          <p class="tagline">BUILD YOUR FUTURE</p>
 
-            <div class="intro-content">
+          <h1>Take the next step in your career.</h1>
 
-                <div class="brand">
-                    Career<span>Connect</span>
-                </div>
+          <p class="intro-text">
+            We are always looking for motivated, talented and passionate
+            individuals. Submit your details and tell us a little about
+            yourself.
+          </p>
 
-                <p class="tagline">
-                    BUILD YOUR FUTURE
-                </p>
-
-                <h1>
-                    Take the next step
-                    in your career.
-                </h1>
-
-                <p class="intro-text">
-                    We are always looking for motivated,
-                    talented and passionate individuals.
-                    Submit your details and tell us a little
-                    about yourself.
-                </p>
-
-                <div class="benefits">
-
-                    <div class="benefit">
-                        <span>✓</span>
-                        <p>Professional opportunities</p>
-                    </div>
-
-                    <div class="benefit">
-                        <span>✓</span>
-                        <p>Growth and learning</p>
-                    </div>
-
-                    <div class="benefit">
-                        <span>✓</span>
-                        <p>Collaborative environment</p>
-                    </div>
-
-                </div>
-
+          <div class="benefits">
+            <div class="benefit">
+              <span>✓</span>
+              <p>Professional opportunities</p>
             </div>
 
-        </section>
-
-
-        <!-- RIGHT SIDE -->
-
-        <section class="form-section">
-
-            <div class="form-container">
-
-                <div class="form-heading">
-
-                    <p class="form-label">
-                        APPLICATION FORM
-                    </p>
-
-                    <h2>
-                        Apply with us
-                    </h2>
-
-                    <p>
-                        Please fill in the information below.
-                    </p>
-
-                </div>
-
-
-                <form id="applicationForm" novalidate>
-
-                    <!-- NAME -->
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Full Name
-                            <span>*</span>
-                        </label>
-
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your full name"
-                            autocomplete="name">
-
-                        <small id="nameError"></small>
-
-                    </div>
-
-
-                    <!-- EMAIL + PHONE -->
-
-                    <div class="form-row">
-
-                        <div class="form-group">
-
-                            <label for="email">
-                                Email Address
-                                <span>*</span>
-                            </label>
-
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                placeholder="you@example.com"
-                                autocomplete="email">
-
-                            <small id="emailError"></small>
-
-                        </div>
-
-
-                        <div class="form-group">
-
-                            <label for="phone">
-                                Phone Number
-                                <span>*</span>
-                            </label>
-
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                placeholder="10-digit number"
-                                maxlength="10"
-                                autocomplete="tel">
-
-                            <small id="phoneError"></small>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- MESSAGE -->
-
-                    <div class="form-group">
-
-                        <label for="message">
-                            Message
-                            <span>*</span>
-                        </label>
-
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Tell us about yourself, your skills or why you are interested..."></textarea>
-
-                        <small id="messageError"></small>
-
-                    </div>
-
-
-                    <!-- SUBMIT -->
-
-                    <button
-                        type="submit"
-                        class="submit-btn">
-
-                        Submit Application
-
-                        <span>→</span>
-
-                    </button>
-
-
-                    <p
-                        id="successMessage"
-                        class="success-message">
-                    </p>
-
-
-                    <p class="required-note">
-                        <span>*</span> Required fields
-                    </p>
-
-                </form>
-
+            <div class="benefit">
+              <span>✓</span>
+              <p>Growth and learning</p>
             </div>
 
-        </section>
+            <div class="benefit">
+              <span>✓</span>
+              <p>Collaborative environment</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- RIGHT SIDE -->
+
+      <section class="form-section">
+        <div class="form-container">
+          <div class="form-heading">
+            <p class="form-label">APPLICATION FORM</p>
+
+            <h2>Apply with us</h2>
+
+            <p>Please fill in the information below.</p>
+          </div>
+
+          <form id="applicationForm" novalidate>
+            <!-- NAME -->
+
+            <div class="form-group">
+              <label for="name">
+                Full Name
+                <span>*</span>
+              </label>
+
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                autocomplete="name"
+              />
+
+              <small id="nameError"></small>
+            </div>
+
+            <!-- EMAIL + PHONE -->
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">
+                  Email Address
+                  <span>*</span>
+                </label>
+
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                />
+
+                <small id="emailError"></small>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">
+                  Phone Number
+                  <span>*</span>
+                </label>
+
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="10-digit number"
+                  maxlength="10"
+                  autocomplete="tel"
+                />
+
+                <small id="phoneError"></small>
+              </div>
+            </div>
+
+            <!-- MESSAGE -->
+
+            <div class="form-group">
+              <label for="message">
+                Message
+                <span>*</span>
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                placeholder="Tell us about yourself, your skills or why you are interested..."
+              ></textarea>
+
+              <small id="messageError"></small>
+            </div>
+
+            <!-- SUBMIT -->
+
+            <button type="submit" class="submit-btn">
+              Submit Application
+
+              <span>→</span>
+            </button>
+
+            <p id="successMessage" class="success-message"></p>
+
+            <p class="required-note"><span>*</span> Required fields</p>
+          </form>
+        </div>
+      </section>
     </main>
 
-
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
